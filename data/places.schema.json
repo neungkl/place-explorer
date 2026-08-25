@@ -1,0 +1,129 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://place-explorer/places.schema.json",
+  "title": "Places",
+  "type": "array",
+  "items": { "$ref": "#/definitions/place" },
+  "definitions": {
+    "tier": {
+      "type": "string",
+      "enum": ["quick", "day", "weekend", "long"]
+    },
+    "tierBand": {
+      "type": "object",
+      "properties": {
+        "min": { "$ref": "#/definitions/tier" },
+        "max": { "$ref": "#/definitions/tier" }
+      },
+      "required": ["min", "max"],
+      "additionalProperties": false
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "lat": { "type": "number", "minimum": -90, "maximum": 90 },
+        "lng": { "type": "number", "minimum": -180, "maximum": 180 },
+        "precision": { "type": "string", "enum": ["exact", "approximate"] }
+      },
+      "required": ["lat", "lng", "precision"],
+      "additionalProperties": false
+    },
+    "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "seasonBand": {
+      "type": "object",
+      "properties": {
+        "months": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/month" },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "why": { "type": "string" }
+      },
+      "required": ["months"],
+      "additionalProperties": false
+    },
+    "seasons": {
+      "type": "object",
+      "properties": {
+        "peak": { "$ref": "#/definitions/seasonBand" },
+        "mid": { "$ref": "#/definitions/seasonBand" },
+        "low": { "$ref": "#/definitions/seasonBand" },
+        "unavailable": { "$ref": "#/definitions/seasonBand" }
+      },
+      "additionalProperties": false
+    },
+    "plan": {
+      "type": ["object", "null"],
+      "properties": {
+        "year": { "type": ["integer", "null"] },
+        "month": { "anyOf": [{ "$ref": "#/definitions/month" }, { "type": "null" }] }
+      },
+      "required": ["year", "month"],
+      "additionalProperties": false
+    },
+    "visit": {
+      "type": "object",
+      "properties": {
+        "start": { "type": "string" },
+        "end": { "type": "string" },
+        "note": { "type": "string" },
+        "log": { "type": "string" }
+      },
+      "required": ["start"],
+      "additionalProperties": false
+    },
+    "experience": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "seasons": { "$ref": "#/definitions/seasons" },
+        "plan": { "$ref": "#/definitions/plan" },
+        "visits": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/visit" }
+        },
+        "gmaps": { "type": "string" }
+      },
+      "required": ["id", "title", "tags", "seasons", "plan", "visits"],
+      "additionalProperties": false
+    },
+    "photo": {
+      "type": "object",
+      "properties": {
+        "src": { "type": "string" },
+        "credit": { "type": "string" }
+      },
+      "required": ["src"],
+      "additionalProperties": false
+    },
+    "place": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "region": { "type": "string" },
+        "tier": { "$ref": "#/definitions/tierBand" },
+        "location": { "$ref": "#/definitions/location" },
+        "gmaps": { "type": "string" },
+        "description": { "type": "string" },
+        "travel": { "type": "string" },
+        "photo": { "$ref": "#/definitions/photo" },
+        "emoji": { "type": ["string", "null"] },
+        "experiences": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/experience" },
+          "minItems": 1
+        }
+      },
+      "required": ["id", "name", "region", "tier", "location", "description", "experiences"],
+      "additionalProperties": false
+    }
+  }
+}

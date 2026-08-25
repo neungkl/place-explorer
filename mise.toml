@@ -1,0 +1,18 @@
+[tools]
+node = "26"
+
+[tasks.dev]
+description = "Start the Vite dev server"
+run = "npm run dev"
+
+[tasks.build]
+description = "Type-check and build the static site"
+run = "npm run build"
+
+[tasks.lint]
+description = "Lint the codebase"
+run = "npm run lint"
+
+[tasks.preview]
+description = "Preview the production build locally"
+run = "npm run preview"

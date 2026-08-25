@@ -1,0 +1,487 @@
+[
+  {
+    "id": "annapurna-base-camp",
+    "name": "Annapurna Base Camp",
+    "region": "Annapurna, Nepal",
+    "tier": {
+      "min": "long",
+      "max": "long"
+    },
+    "location": {
+      "lat": 28.5306,
+      "lng": 83.8203,
+      "precision": "approximate"
+    },
+    "description": "Multi-day teahouse trek into a 4,130m glacial amphitheater ringed by 7,000m+ peaks.",
+    "travel": "Fly Bangkok-Kathmandu (~3.5h), then flight or bus to Pokhara, then a 7-12 day teahouse trek starting from Nayapul.",
+    "experiences": [
+      {
+        "id": "trek",
+        "title": "Annapurna Base Camp trek",
+        "tags": [
+          "hiking",
+          "viewpoint",
+          "nature",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              3,
+              4,
+              10,
+              11
+            ],
+            "why": "Stable weather, clearest mountain views; spring rhododendron blooms, autumn is the driest air of the year."
+          },
+          "mid": {
+            "months": [
+              5,
+              9
+            ],
+            "why": "Shoulder season - warmer/hazier pre-monsoon in May, early post-monsoon clearing in September."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Doable with proper gear but very cold (down to -20C at base camp) and snowy; fewer crowds."
+          },
+          "unavailable": {
+            "months": [
+              6,
+              7,
+              8
+            ],
+            "why": "Monsoon: leeches, landslide risk, and clouded-out views most days."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "samaesan",
+    "name": "Samaesan",
+    "region": "Sattahip, Chonburi, Thailand",
+    "tier": {
+      "min": "day",
+      "max": "weekend"
+    },
+    "location": {
+      "lat": 12.5667,
+      "lng": 100.95,
+      "precision": "exact"
+    },
+    "description": "Navy-run wreck diving off Sattahip: the sunken warship HTMS Khram serves as an artificial reef, plus the extreme-depth Samaesan Hole for technical divers.",
+    "travel": "~2.5-3.5h drive from Bangkok to Sattahip/Samaesan. Day-trip dive boats depart from piers in Samaesan town; also bookable as a weekend liveaboard/package.",
+    "emoji": "🤿",
+    "experiences": [
+      {
+        "id": "dive",
+        "title": "Wreck diving",
+        "tags": [
+          "scuba-diving"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              11,
+              12
+            ],
+            "why": "NE monsoon dry season: calmest seas and clearest visibility, the high season for Gulf of Thailand diving out of Sattahip."
+          },
+          "mid": {
+            "months": [
+              3,
+              9,
+              10
+            ],
+            "why": "Shoulder months as the SW monsoon transitions in and out: still decent visibility, fewer crowds."
+          },
+          "low": {
+            "months": [
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "why": "SW monsoon: choppier seas and reduced visibility (roughly 3-10m), but the eastern seaboard is sheltered from the worst of it so trips still run."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "koh-tao",
+    "name": "Koh Tao",
+    "region": "Surat Thani, Thailand",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 10.0956,
+      "lng": 99.8403,
+      "precision": "exact"
+    },
+    "description": "Small Gulf of Thailand island famous as one of the world's most popular and affordable places to get PADI certified, with dive sites like Chumphon Pinnacle, Sail Rock, White Rock, and the scuttled HTMS Sattakut wreck.",
+    "travel": "Overnight bus/train + ferry from Bangkok (~10-12h total), or fly Bangkok to Koh Samui/Chumphon then ferry (~2-3h) to Koh Tao pier.",
+    "emoji": "🤿",
+    "experiences": [
+      {
+        "id": "dive",
+        "title": "Scuba diving",
+        "tags": [
+          "scuba-diving",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              2,
+              3,
+              4
+            ],
+            "why": "Calmest seas and best visibility of the year (often 25-30m), plus peak whale shark season at sites like Chumphon Pinnacle."
+          },
+          "mid": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "SW monsoon roughens the west coast, but Koh Tao is sheltered and boats simply shift to the calmer east side; Sep-Oct in particular often rivals peak-season visibility with far fewer divers."
+          },
+          "low": {
+            "months": [
+              1,
+              11,
+              12
+            ],
+            "why": "NE monsoon: the roughest seas and lowest visibility of the year (sometimes under 10m), and some exposed west-coast sites become inaccessible - but sheltered sites like Twins and White Rock keep running most days, so diving doesn't actually stop."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "mount-kinabalu",
+    "name": "Mount Kinabalu",
+    "region": "Sabah, Malaysia",
+    "tier": {
+      "min": "weekend",
+      "max": "weekend"
+    },
+    "location": {
+      "lat": 6.075,
+      "lng": 116.5586,
+      "precision": "exact"
+    },
+    "gmaps": "https://maps.google.com/?q=Low%27s+Peak+Mount+Kinabalu",
+    "description": "Southeast Asia's highest peak (4,095m) in Kinabalu Park, Borneo — a two-day guided trek via Laban Rata to Low's Peak for sunrise above the clouds.",
+    "travel": "Fly Bangkok to Kota Kinabalu (~3.5h direct), then ~2h drive to Kinabalu Park HQ / Timpohon Gate to start the climb.",
+    "experiences": [
+      {
+        "id": "summit-trek",
+        "title": "Two-day summit trek to Low's Peak",
+        "tags": [
+          "hiking",
+          "viewpoint",
+          "nature",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              2,
+              3,
+              4
+            ],
+            "why": "Sunniest, clearest skies of the year — best odds of an unobstructed sunrise from Low's Peak, though permits book out 6-9 months ahead."
+          },
+          "mid": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Dry season continues with good trail conditions and steadier permit availability than the Feb-Apr rush."
+          },
+          "low": {
+            "months": [
+              1
+            ],
+            "why": "Tail end of the monsoon — trails often still wet underfoot, but climbable with fewer crowds."
+          },
+          "unavailable": {
+            "months": [
+              10,
+              11,
+              12
+            ],
+            "why": "Peak monsoon — heaviest rain, slippery trails, and the highest risk of summit closure for safety."
+          }
+        },
+        "plan": null,
+        "visits": [],
+        "gmaps": "https://maps.google.com/?q=Timpohon+Gate+Kinabalu+Park"
+      }
+    ]
+  },
+  {
+    "id": "bali",
+    "name": "Bali",
+    "region": "Bali, Indonesia",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": -8.5069,
+      "lng": 115.2625,
+      "precision": "exact"
+    },
+    "description": "Indonesia's most-visited island, a mix of Ubud's rice terraces and temples, Uluwatu/Canggu/Seminyak's beaches and surf, and volcanic landscapes around Batur and Agung.",
+    "travel": "Direct flight Bangkok (BKK/DMK) to Denpasar (DPS), ~4h20m.",
+    "emoji": "🏖️",
+    "experiences": [
+      {
+        "id": "island-trip",
+        "title": "Explore Bali",
+        "tags": [
+          "beach",
+          "temple",
+          "nature",
+          "food"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Core dry season: sunny, low humidity, and the least rain of the year (Denpasar/Ubud both bottom out around 15-40mm in Aug) — best all-around conditions for rice terraces, temples, and beaches."
+          },
+          "mid": {
+            "months": [
+              4,
+              10
+            ],
+            "why": "Shoulder dry season transitioning in/out of the wet months: still mostly sunny with occasional showers, warmer and more humid than peak, noticeably fewer crowds."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Wet season, wettest Dec-Feb (Ubud ~280-400mm/month vs <100mm in dry season): frequent afternoon downpours and high humidity, with brief flash flooding in low-lying spots like Canggu/Seminyak/Kuta that drains within an hour or two. Temples, rice terraces, and beaches stay open, though some hiking/trekking tours pause during storms."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "memories-beach",
+    "name": "Memories Beach",
+    "region": "Khao Lak, Phang Nga, Thailand",
+    "tier": {
+      "min": "day",
+      "max": "weekend"
+    },
+    "location": {
+      "lat": 8.7181,
+      "lng": 98.2349,
+      "precision": "exact"
+    },
+    "description": "Wide sandy beach break in the Pakarang area north of Khao Lak, on the Andaman coast — beginner-friendly white-water rollers plus nearby reef breaks at Cape Pakarang for more experienced surfers.",
+    "travel": "Fly Bangkok to Phuket (~1.5h) then drive/taxi north to Khao Lak (~1-1.5h), or direct minivan/bus from Bangkok (~9-10h).",
+    "emoji": "🏄",
+    "experiences": [
+      {
+        "id": "surf",
+        "title": "Surfing",
+        "tags": [
+          "surfing",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "SW monsoon at its strongest: most consistent swell of the year, with July often cited as the single best month."
+          },
+          "unavailable": {
+            "months": [
+              1,
+              2,
+              3,
+              12
+            ],
+            "why": "Dry season: prevailing easterly wind leaves the coast sheltered by the mountains and seas go flat/glassy — no swell for surfing (this is peak season for diving/beach tourism instead)."
+          },
+          "mid": {
+            "months": [
+              4,
+              5,
+              10,
+              11
+            ],
+            "why": "Monsoon building up and tapering off: smaller, less consistent swell than peak, but still surfable and less crowded."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "new-zealand",
+    "name": "New Zealand",
+    "region": "South Island, New Zealand",
+    "tier": {
+      "min": "long",
+      "max": "long"
+    },
+    "location": {
+      "lat": -45.0312,
+      "lng": 168.6626,
+      "precision": "approximate"
+    },
+    "description": "A self-drive loop through the South Island's mix of alpine lakes, fjords, and glaciers — Christchurch, Kaikoura's coast, Queenstown, Milford Sound, and the Franz Josef/Fox glaciers, with side trips north to Rotorua and Tongariro possible on a longer North Island extension.",
+    "travel": "No direct flights from Bangkok; connect via Singapore or another hub to Christchurch (CHC) or Auckland (AKL), total travel time roughly 20-24h door-to-door including the layover.",
+    "emoji": "🚗",
+    "experiences": [
+      {
+        "id": "south-island-loop",
+        "title": "South Island road trip",
+        "tags": [
+          "road-trip",
+          "nature",
+          "viewpoint",
+          "hiking",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Southern Hemisphere summer: warmest temps (19-23C), longest daylight, and all alpine roads (Milford Road, Lindis Pass, Crown Range) clear of snow with no chain requirement — best all-around driving conditions, though also the most crowded and expensive time to book."
+          },
+          "mid": {
+            "months": [
+              3,
+              4,
+              5,
+              10,
+              11
+            ],
+            "why": "Autumn and spring shoulder seasons: mild weather (13-19C) and noticeably fewer crowds/lower prices. Roads are generally clear, but May and October can see early/late alpine snow, and Nov falls inside the Jun-Nov window where Milford Road legally requires carrying snow chains as a precaution."
+          },
+          "low": {
+            "months": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Winter: cold (1-10C) with short daylight hours. Snow chains are a legal requirement for the Te Anau-Milford Sound section and common on Lindis Pass/Crown Range, and the Milford Road can see temporary night closures or gate closures during active avalanche-control periods. Roads reopen once conditions are managed and self-drive trips still run, just with more caution, delays, and route flexibility needed."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "faroe-islands",
+    "name": "Faroe Islands",
+    "region": "Faroe Islands, Kingdom of Denmark",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 62.0117,
+      "lng": -6.7675,
+      "precision": "exact"
+    },
+    "description": "18 volcanic islands strung between Iceland and Norway - sheer sea cliffs, grass-roof villages, and a dense network of ridge and coastal hikes (Drangarnir, Lake Sorvagsvatn/Traelanipa, Mulafossur, Kalsoy) packed into a tiny, endlessly green archipelago.",
+    "travel": "No direct flights from Bangkok to the Faroes; fly Thai Airways or SAS direct BKK-Copenhagen (~10.5-11h), then Atlantic Airways or SAS on to Vagar (FAE, ~2h15m) - roughly 16-20h door-to-door including the Copenhagen layover. Vagar airport is ~45min by road/tunnel from Torshavn.",
+    "emoji": "🏔️",
+    "experiences": [
+      {
+        "id": "highlands-hike",
+        "title": "Island-hopping hike & scenic drive",
+        "tags": [
+          "hiking",
+          "viewpoint",
+          "nature",
+          "waterfall",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              6,
+              7,
+              8
+            ],
+            "why": "Summer: mildest temps (9-13C), near-midnight sun with 16-20+ hours of daylight, and all hiking trails, ferries (including the seasonal Mykines puffin ferry) and tour operators running at full capacity - the most reliable weather window, though also the busiest and priciest (book cars/hikes/Mykines permits well ahead)."
+          },
+          "mid": {
+            "months": [
+              4,
+              5,
+              9
+            ],
+            "why": "Shoulder season: trails reopen and green up through April, the seasonal Mykines puffin ferry starts running in May as birds return, and daylight stays generous (10-18h) with noticeably fewer crowds than summer; September still has workable conditions before autumn storms set in."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              10,
+              11,
+              12
+            ],
+            "why": "Winter half of the year: daylight drops to as little as 5-7h in Nov/Dec, rain and wind pick up substantially with frequent gales, the Mykines ferry stops running for the season, and exposed ridge trails (Slaettaratindur, Kallur Lighthouse) are frequently icy, snow-covered or genuinely impassable, especially in January. Roads and the subsea tunnel network (built partly to bypass weather-dependent ferries) stay open, and trips still run with more layers, flexibility and caution rather than stopping outright."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  }
+]

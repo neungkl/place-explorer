@@ -1,0 +1,1061 @@
+:root {
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --accent-chip-bg: #dbeafe;
+  --text: #1a1a1e;
+  --text-muted: #6b6b76;
+  --bg: #ffffff;
+  --bg-muted: #f4f4f6;
+  --border: #e4e4e9;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --radius: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #60a5fa;
+    --accent-soft: rgba(96, 165, 250, 0.16);
+    /* Fully opaque, unlike --accent-soft — this backs the active-filter
+       chips floating directly over the map, where a translucent fill lets
+       whatever's underneath show through and reads as "barely visible". */
+    --accent-chip-bg: #1e3a5f;
+    --text: #f1f1f4;
+    --text-muted: #9a9aa5;
+    --bg: #17171b;
+    --bg-muted: #202024;
+    --border: #2c2c32;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.app {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* --- Map --- */
+
+.map {
+  position: absolute;
+  inset: 0;
+}
+
+.map__canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.pin {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  /* Someday (no plan) gets no ring at all, per the design doc's commitment
+     encoding — transparent keeps the box sized consistently with the
+     committed/intent borders below without drawing a visible outline. */
+  border: 2px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, width 0.15s ease, height 0.15s ease,
+    font-size 0.15s ease, opacity 0.15s ease, background 0.15s ease;
+  z-index: 2; /* someday: below planned, above visited */
+}
+
+.pin--committed {
+  border: 2.5px solid var(--accent);
+  z-index: 4;
+}
+
+.pin--intent {
+  border: 2px solid var(--accent);
+  z-index: 3;
+}
+
+.pin--visited {
+  /* MapLibre sets an inline opacity on the marker element itself, which
+     otherwise beats any class rule — !important is required to dim it. */
+  opacity: 0.5 !important;
+  filter: grayscale(100%);
+  border-style: dashed;
+  border-color: var(--border);
+  z-index: 1;
+}
+
+.pin--selected {
+  transform: scale(1.18);
+  box-shadow: 0 0 0 5px var(--accent-soft), 0 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+.pin--hidden {
+  /* Same !important reasoning as .pin--visited — MapLibre's own inline
+     style would otherwise win over a plain display rule. */
+  display: none !important;
+}
+
+/* --- Pin season encoding (fill/size) --- */
+/* Independent of the commitment ring above: peak = filled + large, mid =
+   the default outlined look at a smaller size, low = faded. Only applied
+   when a month is selected — see App.tsx's pinSeasonBands. */
+
+.pin--season-peak {
+  background: var(--accent);
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.pin--season-mid {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  background: var(--bg-muted);
+}
+
+.pin--season-low {
+  width: 26px;
+  height: 26px;
+  font-size: 13px;
+  /* MapLibre sets an inline opacity on the marker element itself, which
+     otherwise beats any class rule — !important is required to dim it,
+     same as .pin--visited above. */
+  opacity: 0.5 !important;
+}
+
+/* A same-color ring would vanish into a peak's solid accent fill — swap the
+   ring to white so commitment still reads as its own channel. A fixed white
+   rather than var(--bg): this ring is contrasting against the pin's own
+   fill color, not against app chrome, and in dark mode var(--bg) reads as a
+   harsh near-black outline — white is the standard map-pin halo instead. */
+.pin--committed.pin--season-peak,
+.pin--intent.pin--season-peak {
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- Floating filter bar --- */
+
+.filter-bar {
+  position: absolute;
+  top: max(12px, env(safe-area-inset-top));
+  left: 12px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.filter-bar__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* Smaller than chips elsewhere (filter panel, tags) — this bar floats over
+   the map and should stay out of the way. */
+.filter-bar .chip {
+  padding: 4px 9px;
+  font-size: 12px;
+}
+
+/* The Filters button is the primary entry point into the panel, so it gets
+   a bit more presence than the active-filter chips beside it. */
+.filter-bar .chip--filters-button {
+  padding: 7px 14px;
+  font-size: 14px;
+}
+
+/* Opaque fill instead of --accent-soft — these chips float directly over
+   the map, so a translucent background lets the map show through and
+   reads as barely visible instead of as an active filter. */
+.filter-bar .chip--active {
+  background: var(--accent-chip-bg);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  background: var(--bg);
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+}
+
+.chip--button {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.chip--button:hover {
+  box-shadow: 0 0 0 1px var(--accent-soft), var(--shadow);
+}
+
+.chip--button:active {
+  transform: scale(0.96);
+}
+
+.chip--button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.chip--filters-button {
+  font-weight: 600;
+}
+
+.chip--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.chip--tag {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  padding: 3px 9px;
+  font-size: 11.5px;
+  box-shadow: none;
+}
+
+/* --- Sheet --- */
+
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg);
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  transition: height 0.25s ease;
+}
+
+.sheet--dragging {
+  transition: none;
+}
+
+.sheet--normal {
+  height: 55%;
+  max-height: 88%;
+}
+
+.sheet--full {
+  height: 90%;
+  max-height: 92%;
+}
+
+/* Collapsed to just the header's natural height — handle plus the year and
+   month filter, nothing else. No fixed height: the content sizes it. */
+.sheet--mini {
+  height: auto;
+}
+
+.sheet--mini .sheet__body {
+  display: none;
+}
+
+.sheet__header {
+  flex: none;
+  padding: 4px 16px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.sheet__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 4px;
+}
+
+.sheet__nav-btn {
+  background: none;
+  border: none;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.sheet__nav-btn--close {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1;
+}
+
+.sheet__handle-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  cursor: grab;
+  touch-action: none;
+}
+
+.sheet__handle-area:active {
+  cursor: grabbing;
+}
+
+.sheet__handle {
+  width: 36px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--border);
+  margin: 0 auto;
+}
+
+.sheet__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px 24px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Month scrubber --- */
+
+.month-scrubber__row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.month-scrubber__pill {
+  display: inline-block;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: none;
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.month-scrubber__pill--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.month-scrubber__year {
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: none;
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.month-scrubber__year--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.month-scrubber__track {
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.month-scrubber__tick {
+  flex: 1;
+  text-align: center;
+  font: inherit;
+  font-size: 10px;
+  padding: 2px 0;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.month-scrubber__tick--active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* --- Place list --- */
+
+.place-list__count {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0 0 14px;
+}
+
+.place-list--empty {
+  padding: 32px 4px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.list-section {
+  margin-bottom: 20px;
+}
+
+.list-section__title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0 0 10px;
+}
+
+.list-section__count {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.list-section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* --- Card --- */
+
+.card {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: var(--radius);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+  cursor: pointer;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.card--committed {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.card--year {
+  border-left-color: var(--accent);
+}
+
+.card--month {
+  border-left-color: var(--accent);
+  border-left-width: 2px;
+}
+
+.card--visited {
+  opacity: 0.7;
+}
+
+.card--low-season {
+  opacity: 0.72;
+}
+
+.card__tile {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: var(--bg-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__tile-emoji {
+  font-size: 26px;
+}
+
+.card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4px 8px;
+}
+
+.card__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card__header .badge {
+  flex: none;
+}
+
+.card__experience {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.card__region {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 2px 0 4px;
+}
+
+.card__description {
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.card__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  margin: 0 0 8px;
+}
+
+/* Same color language as the pin fill and the detail sheet's season-notes
+   dots — peak solid accent, mid soft accent outline, low muted. */
+.card__season {
+  font-size: 12.5px;
+  margin: 0 0 8px;
+  color: var(--text-muted);
+}
+
+.card__season-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.card__season--peak .card__season-badge {
+  background: var(--accent);
+  color: #fff;
+}
+
+.card__season--mid .card__season-badge {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.card__season--low .card__season-badge {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+}
+
+.card__meta {
+  display: flex;
+  gap: 16px;
+  margin: 0 0 8px;
+}
+
+.card__meta dt {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.card__meta dd {
+  margin: 0;
+  font-size: 12.5px;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__gmaps {
+  font-size: 12.5px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.badge--plan {
+  background: var(--accent);
+  color: #fff;
+}
+
+.badge--visited {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+}
+
+.badge--been-before {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+}
+
+/* --- Preview (Selected state) --- */
+
+.preview__summary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preview__tile {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--bg-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  overflow: hidden;
+}
+
+.preview__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preview__name {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.preview__region {
+  margin: 2px 0;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.preview__meta {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.preview__approx {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.preview__rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.preview__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-muted);
+  border: none;
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+.preview__row-emoji {
+  flex: none;
+  font-size: 20px;
+}
+
+.preview__row-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__row-title {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.preview__row-sub {
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+/* --- Detail --- */
+
+.detail__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.detail__emoji {
+  font-size: 26px;
+}
+
+.detail__heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.detail__place-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.detail__place-link span {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.detail__place-link:hover,
+.detail__place-link:focus-visible {
+  color: var(--accent);
+}
+
+.detail__experience {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.detail__region {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.detail__description {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+}
+
+.detail__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.detail__section {
+  margin-bottom: 16px;
+}
+
+.detail__section h3 {
+  margin: 0 0 6px;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.detail__visits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.detail__visit-note {
+  color: var(--text-muted);
+}
+
+.detail__travel {
+  margin: 0;
+  font-size: 13px;
+}
+
+.detail__gmaps {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* --- Filter panel --- */
+
+.filter-panel__section {
+  margin-bottom: 22px;
+}
+
+.filter-panel__section h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0 0 8px;
+}
+
+.filter-panel__tag-group {
+  margin-bottom: 12px;
+}
+
+.filter-panel__tag-group h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin: 0 0 6px;
+}
+
+.filter-panel__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip--toggle {
+  background: var(--bg-muted);
+  box-shadow: none;
+}
+
+/* Tags run to dozens of options, so their chips run smaller than the
+   trip-length ones to fit more per row. */
+.filter-panel__tag-group .filter-panel__chips {
+  gap: 5px;
+}
+
+.filter-panel__tag-group .chip--toggle {
+  padding: 4px 9px;
+  font-size: 12px;
+  gap: 3px;
+}
+
+.filter-panel__select {
+  font: inherit;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+}
+
+.filter-panel__toggle {
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 24px;
+  padding: 2px;
+  border: none;
+  border-radius: 999px;
+  background: var(--bg-muted);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: background 0.15s ease;
+}
+
+.filter-panel__toggle--on {
+  background: var(--accent);
+}
+
+.filter-panel__toggle-knob {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease;
+}
+
+.filter-panel__toggle--on .filter-panel__toggle-knob {
+  transform: translateX(16px);
+}
+
+.filter-panel__toggle-label {
+  margin-left: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  vertical-align: middle;
+}
+
+.filter-panel__segmented {
+  display: inline-flex;
+  border-radius: 10px;
+  background: var(--bg-muted);
+  padding: 3px;
+  gap: 2px;
+}
+
+.filter-panel__segment {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 8px;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.filter-panel__segment--active {
+  background: var(--bg);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+/* --- Month strip --- */
+
+.month-strip {
+  display: flex;
+  gap: 2px;
+}
+
+.month-strip__cell {
+  flex: 1;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 6px;
+  font-size: 9.5px;
+  background: var(--bg-muted);
+  color: var(--text-muted);
+}
+
+.month-strip__cell--peak {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.month-strip__cell--mid {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.month-strip__cell--low {
+  background: var(--bg-muted);
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.month-strip__cell--unavailable {
+  background: transparent;
+  color: var(--text-muted);
+  opacity: 0.35;
+  text-decoration: line-through;
+}
+
+/* --- Season notes --- */
+
+.season-notes {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.season-notes__row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.season-notes__dot {
+  flex: none;
+  width: 9px;
+  height: 9px;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+.season-notes__dot--peak {
+  background: var(--accent);
+}
+
+.season-notes__dot--mid {
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+}
+
+.season-notes__dot--low {
+  background: var(--text-muted);
+  opacity: 0.6;
+}
+
+.season-notes__dot--unavailable {
+  border: 1px solid var(--text-muted);
+  opacity: 0.5;
+}
+
+.season-notes__label {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.season-notes__why {
+  margin: 2px 0 0;
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
