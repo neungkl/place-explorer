@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+/* Without this, <button> falls back to the browser's own control text
+   color instead of ours - invisible on desktop (close enough to black to
+   not notice) but iOS Safari's default is system blue, which shows up
+   clearly on every chip/toggle button in dark mode. */
+button {
+  color: inherit;
+}
+
 html,
 body,
 #root {
