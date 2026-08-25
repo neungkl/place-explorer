@@ -483,5 +483,66 @@
         "visits": []
       }
     ]
+  },
+  {
+    "id": "phu-soi-dao",
+    "name": "Phu Soi Dao National Park",
+    "region": "Uttaradit, Thailand",
+    "tier": {
+      "min": "long",
+      "max": "long"
+    },
+    "location": {
+      "lat": 17.704739,
+      "lng": 100.95167,
+      "precision": "approximate"
+    },
+    "gmaps": "https://www.google.com/maps/place/Phu+Soi+Dao+National+Park/@17.704739,100.951670,12z",
+    "description": "Multi-day trek to Thailand's highest pine savanna meadow (ลานสน) on the Laos border, famous for the rainy-season dok-ngon-nak wildflower bloom and cold-season sea-of-mist views from a 2,102m summit.",
+    "travel": "Fly Bangkok-Phitsanulok (~1h) or overnight bus/train, then ~2.5h drive to the Huai Muen (Mo Sai Wan) ranger checkpoint in Nam Pat district, Uttaradit; trek starts from there.",
+    "experiences": [
+      {
+        "id": "trek",
+        "title": "Phu Soi Dao summit trek",
+        "tags": [
+          "hiking",
+          "mountain",
+          "viewpoint",
+          "nature"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              10,
+              11,
+              12
+            ],
+            "why": "Cool, clearer season: pleasant trekking weather Oct-Nov, coldest air Dec-Jan with dramatic morning sea-of-mist over the pine meadow; the most popular window and where the DNP online tent quota fills fastest."
+          },
+          "mid": {
+            "months": [
+              7,
+              8,
+              9
+            ],
+            "why": "Rainy season, but this is when the park's signature dok-ngon-nak (Cornukaempferia) wildflower carpets the summit meadow in bloom; trails are muddier and rain is frequent, though the park is fully open and busy with flower-chasers."
+          },
+          "unavailable": {
+            "months": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "why": "DNP closes the summit meadow/trekking zone park-wide each dry season (roughly mid-Jan through June 30) to let vegetation recover and prevent wildfires; no trekking permits are issued and the trail is physically closed during this window."
+          }
+        },
+        "plan": null,
+        "visits": [],
+        "gmaps": "https://www.google.com/maps/place/Phu+Soi+Dao+National+Park/@17.704739,100.951670,12z"
+      }
+    ]
   }
 ]
