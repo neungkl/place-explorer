@@ -1,7 +1,16 @@
 import { useEffect, useRef } from "react";
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+// maplibre-gl resolves its render worker via a runtime `import.meta.url`
+// lookup Vite can't statically analyze, so the worker chunk never lands in
+// the production build (it only works in dev, served straight from
+// node_modules) and tiles/markers silently fail to render. Importing it as
+// a `?url` asset forces Vite to emit and hash it, then we point the library
+// at that emitted URL explicitly.
+import maplibreWorkerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?url";
 import { MAP_STYLE_URL } from "../../config";
+
+maplibregl.setWorkerUrl(maplibreWorkerUrl);
 import type { Place } from "../types";
 import { resolvePlaceEmoji } from "../lib/emoji";
 import { planRank } from "../lib/format";
