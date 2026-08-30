@@ -577,32 +577,73 @@
               10,
               11
             ],
-            "why": "Cool, crisp autumn air with clear visibility and peak fall foliage (late Oct-early Nov) on the crater slopes; widely cited as the best window for the Baengnokdam summit view."
+            "why": "Autumn: dry, settled weather with the clearest air of the year and the most reliable Baengnokdam summit views, plus fall foliage on the crater slopes peaking late October to early November - early November can already mix the first snow dustings with the last colour. The most popular window; reserve the Seongpanak or Gwaneumsa permit as early as you can."
           },
           "mid": {
             "months": [
-              3,
               4,
               5
             ],
-            "why": "Mild temperatures with king cherry blossoms (late March) and royal azaleas blooming along the trail into May, before summer humidity sets in."
+            "why": "Late spring: the mildest hiking temperatures of the year, with royal azaleas on the upper slopes in May and most of the winter snow gone (patches linger near the summit into April). The catch for the crater view is spring fog and strong high-altitude winds, which frequently leave Baengnokdam socked in even on an otherwise clear day."
           },
           "low": {
             "months": [
               1,
               2,
+              3,
               6,
               7,
               8,
               9,
               12
             ],
-            "why": "Jun-Sep: hot, humid, frequent afternoon showers reduce comfort and summit visibility. Dec-Feb: trails snow- and ice-covered (crampons required), shelter cutoff times move earlier, and closures from high winds are more frequent -- but both official routes (Seongpanak, Gwaneumsa) still run via reservation, just at reduced reliability."
+            "why": "Two off-seasons. December-March is full winter on the summit trails: snow and ice from around 1,000m up, crampons required (basic ones sold at the trailheads), severe windchill, and more frequent closures of the summit section for high wind or heavy snow - but both routes still run by reservation and the snow-covered crater is a spectacular, if demanding, hike. June-September is the monsoon and typhoon season: heaviest rain June-July, heat and humidity at the trailhead, near-daily afternoon thunderstorms, and typhoon risk in August-September, with the summit usually lost in cloud."
           }
         },
         "plan": null,
         "visits": [],
         "gmaps": "https://maps.app.goo.gl/2vqQ3nQY4qFqYt2t9"
+      },
+      {
+        "id": "coast",
+        "title": "Coastal cliffs & Olle trails",
+        "tags": [
+          "hiking",
+          "viewpoint",
+          "nature",
+          "road-trip"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              5,
+              10,
+              11
+            ],
+            "why": "The two mild, low-humidity windows with the best light on the coast. April-May: warm, settled, and the flower season - canola through April and cherry blossom in early April along the coastal roads and around Seongsan Ilchulbong. October-November: clear skies, cool 15-25C walking weather, low humidity, and silver pampas grass along the cliff-top and volcanic sections; the southern-coast light in October is exceptional. Typhoon risk has faded by mid-October."
+          },
+          "mid": {
+            "months": [
+              3,
+              6,
+              9
+            ],
+            "why": "Shoulder months. March: the winter monsoon is easing and the first canola opens in the southwest, but it is still cool and blustery on exposed cliffs and headlands. June: warm and green, but humidity climbs and the jangma rainy season arrives in bands from around the third week. September: heat and humidity linger and it is the peak of Jeju's typhoon season (early-to-mid September the highest risk), though a settled late-September spell - once the domestic summer crowds have gone - can be superb."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              7,
+              8,
+              12
+            ],
+            "why": "December-February: the northwesterly winter monsoon batters the exposed coast, cold is wind-chill driven (air 3-10C but feels far colder on the cliffs), skies are often grey, steps at viewpoints like Seongsan Ilchulbong get frosty and slippery, and winter sunrises are frequently clouded out - the Olle trails stay open but coastal walking is raw. July-August: hot and very humid with almost no shade on the coastal sections (the guided Olle walks are suspended for the heat), the tail of the rainy season runs into July, and it is the peak of domestic holiday crowds."
+          }
+        },
+        "plan": null,
+        "visits": []
       }
     ]
   },
@@ -1005,39 +1046,38 @@
     "experiences": [
       {
         "id": "ocean",
-        "title": "Diving, snorkeling & beaches",
+        "title": "Diving & snorkeling",
         "tags": [
           "scuba-diving",
-          "snorkeling",
-          "beach"
+          "snorkeling"
         ],
         "seasons": {
           "peak": {
             "months": [
+              4,
+              5,
               6,
-              7,
               10,
               11
             ],
-            "why": "The core dive window. June-July bring the warmest water (climbing to 28-30C) and the year's best visibility, often 30m+ on the Kerama reefs and at Cape Maeda's Blue Cave; October-November hold 24-27C water and similar visibility after the typhoons have passed, with the fewest divers around."
+            "why": "Okinawa's calm, typhoon-free diving window. April-June: settled seas as the drift-diving season opens, visibility excellent (clearest late April and late June), water warming from ~24C into the high 20s - caveats are Golden Week crowds around late April to early May and the tsuyu rains from early May (rain doesn't cancel dives, only wind and waves do). October-November: typhoons have cleared, water still 25-27C, visibility back to 30m+, November has the most settled weather of the year, and crowds and prices are low."
           },
           "mid": {
-            "months": [
-              4,
-              5,
-              8,
-              9
-            ],
-            "why": "April-May: visibility is already good but the water is the coolest of the diving year (~22-25C, a thick wetsuit) and the tsuyu rains set in from mid-May. August-September: warm water and excellent visibility between weather systems, but the peak of typhoon season - storms can ground dive boats and ferries for days - and the most crowded, priciest time."
-          },
-          "low": {
             "months": [
               1,
               2,
               3,
               12
             ],
-            "why": "Winter: the coolest water of the year (19-22C, a 5-7mm wetsuit or drysuit), with fewer boats running and some smaller operators closed. Diving continues year-round and Kerama visibility still runs 20-40m, but it's cold-water diving and the quietest, cheapest season."
+            "why": "Winter: the clearest water of the year on the Kerama reefs (often 30-40m as the plankton dies back), plus humpback whales around the Keramas and hammerheads off Yonaguni from January to March. But it's the coldest water (~19-22C, a 5-7mm wetsuit or drysuit), the air and wind are cold, and the northerly monsoon cancels some boat days (south-facing sites are the fallback); a few small operators cut back their hours. The quietest and cheapest season - good diving for the well-prepared."
+          },
+          "low": {
+            "months": [
+              7,
+              8,
+              9
+            ],
+            "why": "Midsummer and the peak of typhoon season. Water is at its warmest (28-30C) and diving carries on, but visibility drops to ~20-25m in the summer plankton bloom, and August-September storms are frequent enough to ground dive boats and inter-island ferries for days at a time (September carries the highest typhoon risk). It's also the most crowded and most expensive stretch, over the school holidays and Obon."
           }
         },
         "plan": null,
@@ -1118,6 +1158,45 @@
               9
             ],
             "why": "The tsuyu rainy season (mid-May to late June) is hot and very humid with frequent heavy downpours; July-September is hotter still (32-34C, draining for castles and outdoor sites), the peak of typhoon season (Aug-Sep storms can close attractions and ground flights), and the most crowded domestic-holiday stretch. Indoor draws like the Churaumi Aquarium and the summer Eisa festivals are the exceptions."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "beach",
+        "title": "Beaches & swimming",
+        "tags": [
+          "beach",
+          "swimming"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              5,
+              6,
+              10
+            ],
+            "why": "Sea open (the umi-biraki opening ceremonies are in March) and warm - about 23C in April rising to ~27C - with the lowest typhoon risk of the swimming year, few crowds outside Golden Week (late April to early May), and box jellyfish not yet a factor before June. October is the standout: water still ~27C, typhoons easing, and prices and crowds drop once the Japanese school holidays end in the first week."
+          },
+          "mid": {
+            "months": [
+              7,
+              8,
+              9
+            ],
+            "why": "Peak summer: the warmest water of the year (29-30C) and every beach facility fully open, but also the peak of typhoon season (August-September storms can close beaches and ground flights for days), the peak of box-jellyfish season (swim inside the netted areas at managed beaches - stings outside them can be serious), fierce heat and humidity, and the most crowded and expensive stretch over the school holidays and Obon."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Managed beaches close their swimming operations at the end of October, so from November there are no lifeguards and no jellyfish nets. Water cools from ~25C in early November to ~21C by February and the air turns cool (15-19C) - fine for beach walks, beachcombing and a warm-day paddle, but not a swimming season for most."
           }
         },
         "plan": null,
