@@ -1141,5 +1141,636 @@
         "visits": []
       }
     ]
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "region": "Egypt",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 29.9792,
+      "lng": 31.1342,
+      "precision": "exact"
+    },
+    "description": "From the Giza pyramids and the Grand Egyptian Museum through Luxor's temples and tombs and a Nile cruise to Aswan - and, on the other side of the country, world-class reef and wreck diving in the Red Sea.",
+    "travel": "No direct flight from Bangkok; one stop via a Gulf hub (Doha, Dubai, Abu Dhabi) to Cairo (CAI), ~12-14h total. Red Sea resorts (Hurghada, Sharm el-Sheikh, Marsa Alam) have their own airports, reached via a Gulf hub or a domestic hop from Cairo.",
+    "emoji": "🐫",
+    "experiences": [
+      {
+        "id": "nile",
+        "title": "Nile & ancient Egypt",
+        "tags": [
+          "history",
+          "temple",
+          "museum",
+          "scenic-transit"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              10,
+              11,
+              12
+            ],
+            "why": "Late October to February: warm, dry days and cool nights across Cairo, Luxor and Aswan - the comfortable window for tombs, temples and a Nile cruise. December-January is the mildest but also the most crowded and expensive."
+          },
+          "mid": {
+            "months": [
+              3,
+              4
+            ],
+            "why": "March-April: still warm rather than hot and noticeably quieter, but the Khamsin can bring hot, dust-laden winds and occasional sandstorms, mainly around Cairo and Aswan."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "May-September: Upper Egypt is punishingly hot - Luxor and Aswan regularly hit 41C+ and Jun-Aug is often called unbearable. Sites and cruises still run and it's the cheapest, least crowded time, but sightseeing means being out at dawn and indoors by midday."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "diving",
+        "title": "Red Sea diving",
+        "tags": [
+          "scuba-diving",
+          "snorkeling",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              3,
+              4,
+              5,
+              9,
+              10,
+              11
+            ],
+            "why": "Spring and autumn: water a comfortable 24-28C, calm seas, and peak shark season on the offshore reefs (Brothers, Daedalus, Elphinstone) - best hammerhead and oceanic-whitetip numbers Oct-Nov. The favourite windows for conditions versus crowds."
+          },
+          "mid": {
+            "months": [
+              6,
+              7,
+              8
+            ],
+            "why": "Summer: warmest water of the year (up to 30C) and calm conditions for the wrecks (Thistlegorm) and reefs, but air temperatures hit 35-40C on land and it's the busiest, priciest stretch."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Winter: coldest water (21-23C, a 5-7mm wetsuit or drysuit) and the strongest winds, and many offshore liveaboards pause in January. Sheltered day-boat diving from Sharm el-Sheikh and Hurghada runs all year, and it's the quietest, cheapest season."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "seattle",
+    "name": "Seattle",
+    "region": "Washington, USA",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 47.6097,
+      "lng": -122.3422,
+      "precision": "exact"
+    },
+    "description": "Pacific Northwest port city between Puget Sound and Lake Washington - Pike Place Market, the Space Needle and a deep coffee, music and food scene, with Mount Rainier, Olympic and North Cascades national parks all in day-trip range.",
+    "travel": "No nonstop from Bangkok; one stop via a North Asian hub (Tokyo, Taipei, Seoul) or a US gateway to Seattle-Tacoma (SEA), ~17-19h total.",
+    "emoji": "🌲",
+    "experiences": [
+      {
+        "id": "city-trip",
+        "title": "Explore Seattle",
+        "tags": [
+          "city",
+          "food",
+          "cafe",
+          "museum",
+          "viewpoint"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              7,
+              8,
+              9
+            ],
+            "why": "Summer: reliably dry, sunny and mild (highs ~24-27C) with long days and the clearest views of Rainier and the Olympics - among the best summer weather in the US and the reason to time a visit here. Also the busiest and priciest stretch; September stays fine with thinner crowds."
+          },
+          "mid": {
+            "months": [
+              4,
+              5,
+              6,
+              10
+            ],
+            "why": "Spring and early-fall shoulders: milder and greener (cherry blossoms late March into April, Skagit Valley tulips in April) but still changeable and often wet, sun and cloud trading off day to day. June is often grey until mid-month before summer sets in; October brings fall colour and the first sustained rain."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "The grey season: frequent light rain and drizzle (November is the wettest month, January the cloudiest), heavy overcast and short days - about 8.5 hours of daylight around the December solstice - with highs only ~7-10C. Hard freezes and lowland snow are uncommon but briefly disruptive when they hit. Everything stays open in what is very much an indoor-culture city (coffee, music, museums, food), and it's the cheapest, quietest time to visit."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "zhangjiajie",
+    "name": "Zhangjiajie National Forest Park",
+    "region": "Hunan, China",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 29.3158,
+      "lng": 110.4342,
+      "precision": "exact"
+    },
+    "description": "The sandstone-pillar forest of Hunan's Wulingyuan area - thousands of quartzite spires up to 300m tall (the 'Avatar' Hallelujah Mountains), linked by clifftop trails, cable cars and the Bailong glass elevator, with Tianmen Mountain and its skywalks nearby.",
+    "travel": "Seasonal direct flights Bangkok to Zhangjiajie (DYG), ~3h; otherwise via a Chinese hub (Changsha, Guangzhou, Shanghai) then a short flight or ~4h high-speed rail from Changsha. The park entrance is ~40min from Zhangjiajie city.",
+    "emoji": "⛰️",
+    "experiences": [
+      {
+        "id": "pillars",
+        "title": "Sandstone pillars & clifftop trails",
+        "tags": [
+          "hiking",
+          "viewpoint",
+          "nature",
+          "mountain",
+          "scenic-transit"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              9,
+              10,
+              11
+            ],
+            "why": "Autumn: the clearest, driest and most comfortable weather of the year (15-20C), with the best odds of both sharp pillar views and early-morning cloud seas, plus foliage from late October. The top window - though Golden Week (Oct 1-7) is extremely crowded and late November turns cold in the mountains."
+          },
+          "mid": {
+            "months": [
+              3,
+              4,
+              5
+            ],
+            "why": "Spring: mild and green with wildflowers and fewer crowds than summer or autumn, but noticeably rainier - low cloud and mist are common and can either drape the pillars beautifully or white out the views for days. Early-May Labour Day holiday is very crowded."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              12
+            ],
+            "why": "Summer is the hottest and wettest time (plum rains Jun-Jul) and brings the worst crowds - Jul-Aug school holidays mean hours-long queues for the Bailong Elevator and cable cars. Winter is cold with occasional snow, which is striking and near-empty, but heavy snow, ice or high wind can close the cable cars, Bailong Elevator, glass walkways and cliff plank paths and halt the shuttle buses when mountain roads shut. The park stays open year-round."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "almaty",
+    "name": "Almaty",
+    "region": "Almaty, Kazakhstan",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 43.2567,
+      "lng": 76.9286,
+      "precision": "exact"
+    },
+    "description": "Kazakhstan's largest city, spread along the foot of the snow-capped Trans-Ili Alatau - leafy Soviet-era boulevards, the Green Bazaar and a lively cafe scene, with hiking trails, the turquoise Big Almaty Lake, Shymbulak ski resort and Charyn Canyon all within a day's reach.",
+    "travel": "Direct flight Bangkok to Almaty (ALA), ~7h.",
+    "emoji": "🏔️",
+    "experiences": [
+      {
+        "id": "mountains",
+        "title": "City & summer mountains",
+        "tags": [
+          "city",
+          "hiking",
+          "nature",
+          "viewpoint",
+          "cafe"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Summer into early autumn: the Alatau trails and roads are snow-free, the alpine lakes (Big Almaty Lake, Kolsai, Kaindy) are reachable, and September is the standout - stable, dry, golden and less crowded. The city itself is hot in Jul-Aug (30C+) and Charyn Canyon is brutal at midday."
+          },
+          "mid": {
+            "months": [
+              4,
+              5,
+              10
+            ],
+            "why": "Shoulder months: April-May is mild and green (apple and apricot blossom, steppe tulips) but the rainiest time, with snow lingering on higher trails into June - though it's prime season for Charyn Canyon. October is crisp and golden and ideal for the city and Charyn, while the high passes and the Kolsai/Kaindy lake roads close for the season."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Winter: cold (highs around -4 to -8C), snowy, and often hazy with pollution trapped against the mountains. The city, Green Bazaar, museums and cafes carry on and Charyn Canyon is still doable if cold, but alpine hiking and the lake roads are out - this is ski season instead."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "snow",
+        "title": "Skiing & skating",
+        "tags": [
+          "skiing",
+          "snowboarding",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              12
+            ],
+            "why": "Core ski season at Shymbulak (2,200-3,200m, ~30min from the city), with the most reliable snowpack in January-February, plus skating at the open-air Medeu rink just below. Cold and sometimes smoggy down in the city."
+          },
+          "low": {
+            "months": [
+              4,
+              11
+            ],
+            "why": "Season shoulders: Shymbulak usually opens in mid-to-late November and runs toward mid-April, and Medeu can open as early as late October, but snow cover is thin and weather-dependent at both ends and lower runs are often patchy."
+          },
+          "unavailable": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "No skiing or skating - Shymbulak's slopes are bare (the gondola still runs for summer hikers and sightseers) and the Medeu rink is closed or given over to other events."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "switzerland",
+    "name": "Switzerland",
+    "region": "Switzerland",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 46.6863,
+      "lng": 7.8632,
+      "precision": "exact"
+    },
+    "description": "The Alpine heart of Europe - Jungfrau and the Matterhorn, Lauterbrunnen's waterfall valley, glacier-fed lakes and a dense network of mountain trains, cable cars and panoramic rail (Glacier Express, Bernina Express); a summer hiking playground and a marquee winter ski destination.",
+    "travel": "Direct flight Bangkok to Zurich (ZRH), ~12h, then fast, frequent trains to the mountain regions (Interlaken ~2h, Zermatt ~3.5h, St Moritz ~3.5h).",
+    "emoji": "🚞",
+    "experiences": [
+      {
+        "id": "alps",
+        "title": "Alps, hiking & scenic trains",
+        "tags": [
+          "hiking",
+          "mountain",
+          "viewpoint",
+          "scenic-transit",
+          "nature"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              7,
+              8,
+              9
+            ],
+            "why": "High summer: every trail is clear, even the high passes, days are long and all cable cars, huts and lake steamers run. September adds golden foliage and thinner crowds; July-August are the busiest and priciest."
+          },
+          "mid": {
+            "months": [
+              6,
+              10
+            ],
+            "why": "June: valleys and mid-altitude trails are green and flowery with the waterfalls at full snowmelt flow, but higher routes still hold snow into early July. October: crisp and golden lower down, though the first snows dust the peaks and the higher lifts and trails start closing."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              11,
+              12
+            ],
+            "why": "The non-hiking half of the year. The flagship mountain railways and panoramic trains (Jungfraujoch, Gornergrat, Glacier Express, Bernina Express) run all year and the cities and lakes are fine, but Alpine hiking is out - and April-May and November are a genuine lull, with many resort-village hotels, restaurants and cable cars closed for maintenance between the ski and summer seasons."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "ski",
+        "title": "Skiing",
+        "tags": [
+          "skiing",
+          "snowboarding",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              12
+            ],
+            "why": "Core winter season: nearly every resort open, best snow depth and coverage in January-February holding through March."
+          },
+          "mid": {
+            "months": [
+              4,
+              11
+            ],
+            "why": "Shoulders: in April the high resorts (Zermatt into early May, Verbier, Saas-Fee, Engelberg) ski well on spring snow while most lower resorts have closed; November is thin early-season, with only glacier and high-altitude areas opening as the month goes on."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "Summer glacier skiing carries on at Zermatt (year-round) and Saas-Fee (from mid-July), mostly early mornings and mainly for training, snow and weather permitting. May-early July and October are the emptiest, with essentially nothing running for recreational skiers elsewhere."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "region": "France",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "precision": "exact"
+    },
+    "description": "From Paris's museums and cafe terraces through the Loire chateaux, Normandy's coast, the Alpine peaks around Chamonix and the lavender plateaus and beaches of Provence and the Riviera - plus the wine regions of Bordeaux, Burgundy and Champagne.",
+    "travel": "Direct flight Bangkok to Paris (CDG), ~12h; a fast TGV network fans out from there (Lyon ~2h, Avignon ~2.5h, Bordeaux ~2h, the Alps ~4h).",
+    "emoji": "🥐",
+    "experiences": [
+      {
+        "id": "culture",
+        "title": "Cities, food & countryside",
+        "tags": [
+          "city",
+          "museum",
+          "food",
+          "history",
+          "cafe"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              5,
+              6,
+              9
+            ],
+            "why": "May, June and September: mild, long days, gardens and vineyards at their best, everything open, and crowds and prices still manageable - the consensus sweet spot, May and September especially."
+          },
+          "mid": {
+            "months": [
+              4,
+              7,
+              8,
+              10
+            ],
+            "why": "April is fresh and blossoming but cooler and showery. July-August bring the longest days and festivals but the heaviest crowds and prices, and many family-run restaurants and shops close for les grandes vacances (August especially, in Paris and the countryside) while the Riviera and Provence are packed. October is golden and quieter as the harvest winds down, turning cooler and wetter."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Winter: cold, grey, short days and wetter, with rural sights, gardens and many chateau and vineyard estates on reduced hours or closed. Paris and the big cities stay fully open - museums, food, and the Christmas markets, Alsace's above all - and prices are at their lowest."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "ski",
+        "title": "French Alps skiing",
+        "tags": [
+          "skiing",
+          "snowboarding",
+          "mountain"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              12
+            ],
+            "why": "Core winter season across the big French Alps areas (Chamonix, Val d'Isere, Tignes, Les Trois Vallees), with the best snow depth and coverage in January-February holding through March."
+          },
+          "mid": {
+            "months": [
+              4,
+              11
+            ],
+            "why": "Shoulders: the high, snow-sure resorts (Tignes, Val d'Isere, Val Thorens, Les 2 Alpes) ski into early May on spring snow while lower resorts have closed; November is thin early-season, with the highest resorts opening from around the 22nd."
+          },
+          "low": {
+            "months": [
+              6,
+              7
+            ],
+            "why": "A brief summer glacier season only: Tignes (Grande Motte, roughly 20 Jun-19 Jul), Val d'Isere (about three weeks in June) and Les 2 Alpes run limited, mornings-only glacier skiing mainly for race training and camps."
+          },
+          "unavailable": {
+            "months": [
+              5,
+              8,
+              9,
+              10
+            ],
+            "why": "No lift-served skiing anywhere in France: the winter resorts have closed and the summer glaciers are either not yet open (May) or already shut for the year (August-October)."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "lavender",
+        "title": "Provence lavender",
+        "tags": [
+          "nature",
+          "viewpoint",
+          "road-trip"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              7
+            ],
+            "why": "Full bloom across all the growing areas - the Valensole plateau in the first half of the month, the higher Pays de Sault from mid-July - the one reliable window for purple rows end to end. Also the busiest."
+          },
+          "low": {
+            "months": [
+              6,
+              8
+            ],
+            "why": "Edges of the bloom: in late June the Valensole plateau is just coming into colour while higher Sault is still green; by August Valensole is usually harvested but the high Pays de Sault holds colour into mid-month before its own cut."
+          },
+          "unavailable": {
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              9,
+              10,
+              11,
+              12
+            ],
+            "why": "Outside roughly mid-June to mid-August the fields are cut back to low green stubble or bare earth - there is nothing purple to see."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "los-angeles",
+    "name": "Los Angeles",
+    "region": "California, USA",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 34.0522,
+      "lng": -118.2437,
+      "precision": "exact"
+    },
+    "description": "Sprawling Southern California metropolis - Hollywood, the Griffith Observatory, Santa Monica and Venice beaches, world-class museums (the Getty, LACMA, The Broad), theme parks and a deep, diverse food scene, all strung together by freeway.",
+    "travel": "No nonstop from Bangkok; one stop via a North Asian hub (Tokyo, Taipei, Seoul) to Los Angeles (LAX), ~17-19h total. A rental car is effectively required to get around.",
+    "emoji": "🌴",
+    "experiences": [
+      {
+        "id": "city-trip",
+        "title": "Explore LA",
+        "tags": [
+          "city",
+          "beach",
+          "food",
+          "museum",
+          "viewpoint"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              5,
+              10,
+              11
+            ],
+            "why": "Spring and mid-to-late fall: warm, dry, clear and comfortable (highs low-to-mid 20s C), green hills and wildflowers in spring, thinning crowds. The most settled weather of the year, after the winter rain and before or after the summer heat and fire season."
+          },
+          "mid": {
+            "months": [
+              3,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "March is pleasant and green but still the tail of the rainy season. June-August is warm, sunny, peak beach and peak tourist season with the highest crowds and prices, and 'June Gloom' keeps the coast overcast until midday from late May into early July while inland valleys get hot. September is often the hottest month, with Santa Ana heat spikes (valleys to 40C) and the start of peak wildfire and smoke season - but clear skies and great beach weather."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Winter: LA's rainy season - mild by any global standard and still mostly sunny, but the few real storms of the year cluster here - and the coolest, shortest days (highs ~19C, cool evenings). Everything stays open; gray-whale watching runs Dec-April and you can ski Big Bear and surf the same day. Quieter and cheaper outside the holidays."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
   }
 ]
