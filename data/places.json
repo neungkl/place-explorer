@@ -544,5 +544,602 @@
         "gmaps": "https://www.google.com/maps/place/Phu+Soi+Dao+National+Park/@17.704739,100.951670,12z"
       }
     ]
+  },
+  {
+    "id": "jeju-island",
+    "name": "Jeju Island",
+    "region": "Jeju, South Korea",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 33.3617,
+      "lng": 126.5292,
+      "precision": "exact"
+    },
+    "description": "Volcanic island off South Korea's south coast, home to Hallasan (South Korea's highest peak) and a UNESCO-listed volcanic landscape of lava tubes, crater lakes, and coastal cliffs.",
+    "travel": "No direct flights from Bangkok; connect via Seoul Incheon (BKK-ICN ~5.5hr, ICN-CJU ~1hr) on Korean Air, Jeju Air, or similar, or via Seoul Gimpo with a domestic Jeju leg — total door-to-door travel roughly 8-10hr each way.",
+    "emoji": "🌋",
+    "experiences": [
+      {
+        "id": "hallasan-summit",
+        "title": "Hike Hallasan to Baengnokdam crater lake",
+        "tags": [
+          "hiking",
+          "mountain",
+          "viewpoint",
+          "nature"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              10,
+              11
+            ],
+            "why": "Cool, crisp autumn air with clear visibility and peak fall foliage (late Oct-early Nov) on the crater slopes; widely cited as the best window for the Baengnokdam summit view."
+          },
+          "mid": {
+            "months": [
+              3,
+              4,
+              5
+            ],
+            "why": "Mild temperatures with king cherry blossoms (late March) and royal azaleas blooming along the trail into May, before summer humidity sets in."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              9,
+              12
+            ],
+            "why": "Jun-Sep: hot, humid, frequent afternoon showers reduce comfort and summit visibility. Dec-Feb: trails snow- and ice-covered (crampons required), shelter cutoff times move earlier, and closures from high winds are more frequent -- but both official routes (Seongpanak, Gwaneumsa) still run via reservation, just at reduced reliability."
+          }
+        },
+        "plan": null,
+        "visits": [],
+        "gmaps": "https://maps.app.goo.gl/2vqQ3nQY4qFqYt2t9"
+      }
+    ]
+  },
+  {
+    "id": "maldives",
+    "name": "Maldives",
+    "region": "Maldives, Indian Ocean",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 4.1755,
+      "lng": 73.5093,
+      "precision": "exact"
+    },
+    "description": "Chain of ~1,190 coral islands across 26 atolls in the Indian Ocean - overwater villas, house reefs, and channel (kandu) dives famous for manta rays, whale sharks, and grey reef sharks.",
+    "travel": "Direct flight Bangkok (BKK) to Male (MLE), ~4.5h, then a seaplane, domestic flight, or speedboat transfer out to the resort island (or board a liveaboard in Male).",
+    "emoji": "🏝️",
+    "experiences": [
+      {
+        "id": "dive",
+        "title": "Diving & snorkeling",
+        "tags": [
+          "scuba-diving",
+          "snorkeling",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              12
+            ],
+            "why": "Northeast monsoon dry season: clear skies, calm seas, 8-9h sunshine and the least rain of the year (Jan-Feb driest), with reef visibility of 25-40m. Also the most crowded and expensive window, peaking over Christmas-New Year; April is the hottest month as the dry season tails off."
+          },
+          "mid": {
+            "months": [
+              5,
+              11
+            ],
+            "why": "Monsoon transition months: more humidity and short, heavy showers or brief squalls, but still plenty of sun, easing visibility and noticeably lower prices and crowds than peak season."
+          },
+          "low": {
+            "months": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "Southwest monsoon wet season: stronger winds, rougher seas and the wettest months (Sep-Oct ~240mm), with overcast spells and visibility dropping to roughly 10-20m from plankton blooms. Diving and resorts run all year, and those same blooms drive peak manta and whale shark aggregations at Hanifaru Bay / Baa Atoll, biggest Aug-Oct."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "cebu",
+    "name": "Cebu",
+    "region": "Cebu, Philippines",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 9.9494,
+      "lng": 123.3986,
+      "precision": "exact"
+    },
+    "description": "Long, narrow Visayan island whose southwest coast around Moalboal is a diving hub - a year-round sardine run and sea turtles off Panagsama Beach and the Pescador Island wall - with the Kawasan Falls canyoneering route through turquoise river pools just up the coast at Badian.",
+    "travel": "Fly Bangkok to Cebu (Mactan-Cebu, CEB), ~3.5h direct or via Manila, then ~2.5-3h by car/van southwest across the island to Moalboal.",
+    "emoji": "🤿",
+    "experiences": [
+      {
+        "id": "sardine-run",
+        "title": "Sardine run & reef diving",
+        "tags": [
+          "scuba-diving",
+          "snorkeling",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              12
+            ],
+            "why": "Amihan dry season: calm seas, little rain (driest Feb-May) and 20-30m+ visibility on the Panagsama reef and Pescador Island wall. Philippine summer Mar-May is the busiest and priciest stretch."
+          },
+          "mid": {
+            "months": [
+              11
+            ],
+            "why": "Transition into the dry season: habagat rains ease and visibility recovers, and it's the least crowded month of the year with noticeably lower lodging prices."
+          },
+          "low": {
+            "months": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "Habagat southwest monsoon: more frequent showers, visibility down to ~10-20m, and the core of the typhoon window (highest risk Aug-Oct). Moalboal's west-coast position is relatively sheltered so diving runs year-round, but boat days and transfers can be disrupted by passing storms; the sardine school itself is resident and present every month."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "canyoneering",
+        "title": "Kawasan Falls canyoneering",
+        "tags": [
+          "canyoneering",
+          "waterfall",
+          "swimming"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              12
+            ],
+            "why": "Dry season: sunny, stable weather and low, clear turquoise water in the Kanlaob canyon - the most reliable window. Mar-May (Philippine summer, Holy Week) is the most crowded."
+          },
+          "mid": {
+            "months": [
+              11
+            ],
+            "why": "Rains tapering off but late-season storms are still possible in the Visayas; generally good conditions with fewer crowds, just check for closures after heavy rain."
+          },
+          "low": {
+            "months": [
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "Rainy season: the canyon is at its lushest, but heavy upstream rain raises the river fast and the LGU closes the route during heavy rain and typhoon warnings (flash-flood risk). Tours still run on clear days, so build in schedule flexibility."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "sydney",
+    "name": "Sydney",
+    "region": "New South Wales, Australia",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": -33.8568,
+      "lng": 151.2153,
+      "precision": "exact"
+    },
+    "description": "Australia's largest city, built around one of the world's great natural harbours - the Opera House and Harbour Bridge, ocean beaches like Bondi and Manly, the Bondi-to-Coogee clifftop walk, and the Blue Mountains an easy train ride west.",
+    "travel": "Direct flight Bangkok (BKK) to Sydney (SYD), ~9h.",
+    "emoji": "🏙️",
+    "experiences": [
+      {
+        "id": "city-trip",
+        "title": "Explore Sydney",
+        "tags": [
+          "city",
+          "beach",
+          "hiking",
+          "viewpoint",
+          "food"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              3,
+              4,
+              9,
+              10,
+              11
+            ],
+            "why": "Autumn and spring shoulders: mild, settled weather (highs ~20-26C), lower humidity and among the driest months (Sep-Oct), ideal for the Bondi-to-Coogee coastal walk, harbour, and Blue Mountains day trips - fewer crowds and lower prices than summer. Early March and October are the sweet spots."
+          },
+          "mid": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Summer: warm to hot (highs ~26C, heatwave spikes past 40C) and humid with afternoon thunderstorms, but the warmest sea and full beach and harbour-swim season. Busiest and most expensive time - NYE fireworks and Christmas/January school holidays - and February begins the wettest stretch of the year."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8
+            ],
+            "why": "Late autumn into winter: coolest (daytime ~17-19C, nights ~8C) with the shortest daylight, and May-June are the two wettest months of the year with heavy east-coast-low downpours. Everything stays open, it's the cheapest low season, and whale watching runs off the coastal cliffs (May-Nov)."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "melbourne",
+    "name": "Melbourne",
+    "region": "Victoria, Australia",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": -37.8136,
+      "lng": 144.9631,
+      "precision": "exact"
+    },
+    "description": "Australia's coffee-and-culture capital on the Yarra - Victorian arcades and graffitied laneways, a dense bar and restaurant scene, world sport at the MCG and Melbourne Park, and the gateway to the Great Ocean Road and Yarra Valley.",
+    "travel": "Direct flight Bangkok (BKK) to Melbourne (MEL), ~9.5h.",
+    "emoji": "☕",
+    "experiences": [
+      {
+        "id": "city-trip",
+        "title": "Explore Melbourne",
+        "tags": [
+          "city",
+          "food",
+          "cafe",
+          "nightlife",
+          "museum"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              3,
+              4,
+              10,
+              11
+            ],
+            "why": "Autumn's settled, mild weather (highs ~18-24C; March is often the driest month of the year) and warm, event-packed mid-to-late spring - Melbourne Cup carnival and footy finals - though spring is breezier and more shower-prone. Shoulder-season crowds and prices."
+          },
+          "mid": {
+            "months": [
+              1,
+              2,
+              12
+            ],
+            "why": "Summer: warmest of the year (highs ~25-26C) and the peak event season (Australian Open, festivals, St Kilda and Mornington Peninsula beach days), but prone to sharp 35-40C+ heat spikes followed by abrupt cool changes; the busiest and most expensive window."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Late autumn through winter into early spring: cold for Australia (winter highs ~13-15C, nights ~6C), grey and drizzly with the most overcast days of the year. The city's indoor draws - laneway bars, galleries, coffee, sport at the MCG - are unaffected, it's the cheapest low season, and the Victorian snowfields (Mt Buller, Falls Creek) are a ~3h drive for skiing roughly Jun-Sep."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "nyc",
+    "name": "New York City",
+    "region": "New York, USA",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 40.758,
+      "lng": -73.9855,
+      "precision": "exact"
+    },
+    "description": "The five-borough metropolis - Manhattan's skyline and museums (the Met, MoMA), Central Park, Broadway, and a food and neighbourhood scene spanning Brooklyn, Queens and beyond.",
+    "travel": "No nonstop from Bangkok; one stop (via Tokyo, Doha or a European hub) to New York (JFK/EWR), ~18-20h door to door.",
+    "emoji": "🗽",
+    "experiences": [
+      {
+        "id": "sightseeing",
+        "title": "City sightseeing",
+        "tags": [
+          "city",
+          "museum",
+          "food",
+          "nightlife",
+          "viewpoint"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              5,
+              6,
+              9,
+              10
+            ],
+            "why": "Spring and early fall: mild, comfortable temperatures (~15-25C), lower humidity, long days, cherry blossoms in Central Park in spring and peak foliage in the parks in late October. The consensus best window."
+          },
+          "mid": {
+            "months": [
+              7,
+              8,
+              11,
+              12
+            ],
+            "why": "Jul-Aug is hot and humid (~28-30C) but the city lives outdoors - free concerts, rooftop bars, Shakespeare in the Park - at peak crowds and prices. Late Nov and Dec are cold but the city is at its most festive."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3
+            ],
+            "why": "Deep winter: cold (highs ~3-5C, lows below freezing) with snow, slush and biting wind, and March still raw. Everything stays open and indoor draws - museums, Broadway - are unaffected; hotel rates are at their lowest, dropping ~30% after New Year's."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "holidays",
+        "title": "Holiday season",
+        "tags": [
+          "city",
+          "festival"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              12
+            ],
+            "why": "The full holiday city: the lit Rockefeller Center tree, department-store window displays, holiday markets (Union Square, Columbus Circle, Bryant Park's Winter Village), outdoor ice rinks and Times Square on New Year's Eve - all live at once, at the cost of the year's thickest crowds and highest hotel prices."
+          },
+          "low": {
+            "months": [
+              1,
+              11
+            ],
+            "why": "Shoulders of the season: Bryant Park's Winter Village and rinks open from late October and the Union Square market from mid-November, but the Rockefeller tree isn't lit until early December; in January the tree stays lit into the first week and the Winter Village rink runs on, but the markets and window displays come down and the crowds thin."
+          },
+          "unavailable": {
+            "months": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "why": "The Rockefeller tree, holiday markets and window displays are only installed from mid-November through early January - none of it exists the rest of the year (Bryant Park's Winter Village rink lingers into early March, but that alone isn't the holiday season)."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "okinawa",
+    "name": "Okinawa",
+    "region": "Okinawa, Japan",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 26.2124,
+      "lng": 127.6809,
+      "precision": "exact"
+    },
+    "description": "Japan's subtropical southern island chain - white-sand beaches, the coral-rich Kerama Islands and the Blue Cave for diving and snorkelling, Ryukyu-kingdom castles, and humpback whales offshore in winter.",
+    "travel": "Direct flight Bangkok to Naha (OKA), ~4.5h, or via a mainland Japan hub.",
+    "emoji": "🐠",
+    "experiences": [
+      {
+        "id": "ocean",
+        "title": "Diving, snorkeling & beaches",
+        "tags": [
+          "scuba-diving",
+          "snorkeling",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              10,
+              11
+            ],
+            "why": "Warm but not hot air (~22-26C), sea around 24-27C, good visibility and far fewer crowds than summer, with low rain and typhoon disruption. April (before the rainy season) and October to early November (after the typhoons taper) are the consensus best windows."
+          },
+          "mid": {
+            "months": [
+              5,
+              6,
+              7
+            ],
+            "why": "Warm and fully swimmable with the sea heading toward its 28-30C summer peak, but mid-May to late June is the rainy season (tsuyu) - very humid with sudden heavy showers - and July brings the start of both the school-holiday crowds and typhoon season."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              8,
+              9,
+              12
+            ],
+            "why": "Aug-Sep is the hottest, most crowded and priciest window and the peak of typhoon season, when storms can ground flights, ferries and dive boats for days. Dec-March stays mild but is too cool for casual swimming (air ~15-20C, sea 19-22C) and beaches effectively close - diving still runs in 5mm/drysuits, and it's the cheapest, quietest time of year."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "whales",
+        "title": "Humpback whale watching",
+        "tags": [
+          "nature"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3
+            ],
+            "why": "Humpbacks gather around the Kerama Islands to breed; boats from Naha and Tomari run daily with 90%+ sighting rates, best late January through February."
+          },
+          "low": {
+            "months": [
+              4,
+              12
+            ],
+            "why": "Shoulders of the migration: the first whales arrive in late December and stragglers linger into early April, so tours still run but sightings are less reliable."
+          },
+          "unavailable": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "why": "The humpbacks are up in their northern feeding grounds - no whale-watching tours operate in Okinawa outside the roughly December-April breeding season."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "cappadocia",
+    "name": "Cappadocia",
+    "region": "Nevsehir, Turkey",
+    "tier": {
+      "min": "weekend",
+      "max": "long"
+    },
+    "location": {
+      "lat": 38.6431,
+      "lng": 34.8283,
+      "precision": "exact"
+    },
+    "description": "Volcanic tableland of 'fairy chimney' rock spires, cave churches and cliff-carved towns like Goreme - and the launch site for the hundreds of hot-air balloons that fill the sunrise sky most mornings.",
+    "travel": "Fly Bangkok to Istanbul (~10h), then a domestic flight to Kayseri (ASR) or Nevsehir (NAV), ~1.5h, then ~45min-1h by road to Goreme.",
+    "emoji": "🎈",
+    "experiences": [
+      {
+        "id": "balloon",
+        "title": "Hot-air balloon flight",
+        "tags": [
+          "hot-air-balloon",
+          "viewpoint",
+          "nature"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              4,
+              5,
+              9,
+              10
+            ],
+            "why": "Spring and autumn: mild mornings (~15-25C), settled air and clear skies give an 85%+ chance flights actually launch, with the best sunrise light and only moderate crowds - the consensus best window."
+          },
+          "mid": {
+            "months": [
+              6,
+              7,
+              8
+            ],
+            "why": "Peak summer has the highest launch rate of the year (cancellations under 10%) thanks to calm, stable mornings, but it's the busiest and priciest time with hot, hazy afternoons - balloon slots and cave hotels book out months ahead."
+          },
+          "low": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Winter and its shoulders: the snow-dusted fairy chimneys are at their most striking, but fog, snow and sustained wind ground flights on roughly 35-50%+ of mornings (January the worst; March notably windy). Flights still run whenever the civil-aviation authority clears the morning - budget 2-3 mornings to be safe - and it's the cheapest, quietest season."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
   }
 ]

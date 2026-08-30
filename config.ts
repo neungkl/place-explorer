@@ -26,6 +26,7 @@ export const TAGS: TagDefinition[] = [
   { slug: "beach", label: "Beach", emoji: "🏖️", group: "Water" },
   { slug: "swimming", label: "Swimming", emoji: "🏊", group: "Water" },
   { slug: "waterfall", label: "Waterfall", emoji: "💦", group: "Water" },
+  { slug: "canyoneering", label: "Canyoneering", emoji: "🪢", group: "Water", aliases: ["canyoning"] },
 
   { slug: "hiking", label: "Hiking", emoji: "🥾", group: "Mountain & snow" },
   { slug: "mountain", label: "Mountain", emoji: "🏔️", group: "Mountain & snow" },
@@ -47,5 +48,6 @@ export const TAGS: TagDefinition[] = [
   { slug: "onsen", label: "Onsen", emoji: "♨️", group: "Rest" },
   { slug: "nature", label: "Nature", emoji: "🌿", group: "Rest" },
   { slug: "scenic-transit", label: "Scenic transit", emoji: "🚋", group: "Rest" },
+  { slug: "hot-air-balloon", label: "Hot-air balloon", emoji: "🎈", group: "Rest", aliases: ["ballooning"] },
   { slug: "road-trip", label: "Road trip", emoji: "🚗", group: "Rest", aliases: ["self-drive"] },
 ];
