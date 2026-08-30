@@ -860,25 +860,25 @@
               10,
               11
             ],
-            "why": "Autumn's settled, mild weather (highs ~18-24C; March is often the driest month of the year) and warm, event-packed mid-to-late spring - Melbourne Cup carnival and footy finals - though spring is breezier and more shower-prone. Shoulder-season crowds and prices."
+            "why": "Autumn's settled, mild weather (highs ~18-24C; March is the driest month of the year, plus the F1 Grand Prix and the start of the Comedy Festival) and warm, event-packed mid-to-late spring - Spring Racing Carnival, Melbourne Cup, footy finals - though spring is wetter and windier than autumn. Shoulder-season crowds and prices."
           },
           "mid": {
             "months": [
               1,
               2,
+              5,
               12
             ],
-            "why": "Summer: warmest of the year (highs ~25-26C) and the peak event season (Australian Open, festivals, St Kilda and Mornington Peninsula beach days), but prone to sharp 35-40C+ heat spikes followed by abrupt cool changes; the busiest and most expensive window."
+            "why": "May is a mild autumn shoulder - dry, quiet, with the last of the foliage - but cool (highs ~17C) and can already feel wintry. December-February is the warmest and most event-packed stretch (Australian Open, festivals, bay beaches at St Kilda and the Mornington Peninsula), but prone to sharp 35-40C+ heat spikes and abrupt cool changes, and it's the busiest and most expensive window."
           },
           "low": {
             "months": [
-              5,
               6,
               7,
               8,
               9
             ],
-            "why": "Late autumn through winter into early spring: cold for Australia (winter highs ~13-15C, nights ~6C), grey and drizzly with the most overcast days of the year. The city's indoor draws - laneway bars, galleries, coffee, sport at the MCG - are unaffected, it's the cheapest low season, and the Victorian snowfields (Mt Buller, Falls Creek) are a ~3h drive for skiing roughly Jun-Sep."
+            "why": "Winter and the raw edge of early spring: cold for Australia (July highs ~13-14C, nights ~6C), grey and drizzly, with September both chilly and one of the wettest months. The city's indoor life - laneway bars, galleries, coffee, footy at the MCG - carries on regardless, it's the cheapest season, and the Victorian snowfields (Mt Buller ~3h, Falls Creek ~4.5h) run roughly June to early October for a snow day out."
           }
         },
         "plan": null,
@@ -1014,30 +1014,30 @@
         "seasons": {
           "peak": {
             "months": [
-              4,
+              6,
+              7,
               10,
               11
             ],
-            "why": "Warm but not hot air (~22-26C), sea around 24-27C, good visibility and far fewer crowds than summer, with low rain and typhoon disruption. April (before the rainy season) and October to early November (after the typhoons taper) are the consensus best windows."
+            "why": "The core dive window. June-July bring the warmest water (climbing to 28-30C) and the year's best visibility, often 30m+ on the Kerama reefs and at Cape Maeda's Blue Cave; October-November hold 24-27C water and similar visibility after the typhoons have passed, with the fewest divers around."
           },
           "mid": {
             "months": [
+              4,
               5,
-              6,
-              7
+              8,
+              9
             ],
-            "why": "Warm and fully swimmable with the sea heading toward its 28-30C summer peak, but mid-May to late June is the rainy season (tsuyu) - very humid with sudden heavy showers - and July brings the start of both the school-holiday crowds and typhoon season."
+            "why": "April-May: visibility is already good but the water is the coolest of the diving year (~22-25C, a thick wetsuit) and the tsuyu rains set in from mid-May. August-September: warm water and excellent visibility between weather systems, but the peak of typhoon season - storms can ground dive boats and ferries for days - and the most crowded, priciest time."
           },
           "low": {
             "months": [
               1,
               2,
               3,
-              8,
-              9,
               12
             ],
-            "why": "Aug-Sep is the hottest, most crowded and priciest window and the peak of typhoon season, when storms can ground flights, ferries and dive boats for days. Dec-March stays mild but is too cool for casual swimming (air ~15-20C, sea 19-22C) and beaches effectively close - diving still runs in 5mm/drysuits, and it's the cheapest, quietest time of year."
+            "why": "Winter: the coolest water of the year (19-22C, a 5-7mm wetsuit or drysuit), with fewer boats running and some smaller operators closed. Diving continues year-round and Kerama visibility still runs 20-40m, but it's cold-water diving and the quietest, cheapest season."
           }
         },
         "plan": null,
@@ -1076,6 +1076,48 @@
               11
             ],
             "why": "The humpbacks are up in their northern feeding grounds - no whale-watching tours operate in Okinawa outside the roughly December-April breeding season."
+          }
+        },
+        "plan": null,
+        "visits": []
+      },
+      {
+        "id": "sightseeing",
+        "title": "Castles, culture & viewpoints",
+        "tags": [
+          "history",
+          "city",
+          "viewpoint",
+          "nature",
+          "food"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Late autumn through winter into early spring: mild (~18-22C), dry, low humidity and essentially no typhoons - the comfortable window for gusuku castle ruins, coastal viewpoints (Cape Manzamo, Kouri Island) and exploring Naha on foot. Okinawa's deep-pink kanhizakura cherry blossoms bloom from mid-January, peaking around late January at spots like Nakijin Castle - the earliest sakura in Japan - and it's the low-price off-season since it isn't beach weather."
+          },
+          "mid": {
+            "months": [
+              4,
+              10
+            ],
+            "why": "April is warm and mostly dry and good for sightseeing, but Golden Week at its end brings a domestic-travel crush. October eases back into comfortable conditions as the heat and typhoon risk fade, though early in the month it can still be hot, humid and storm-prone."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "The tsuyu rainy season (mid-May to late June) is hot and very humid with frequent heavy downpours; July-September is hotter still (32-34C, draining for castles and outdoor sites), the peak of typhoon season (Aug-Sep storms can close attractions and ground flights), and the most crowded domestic-holiday stretch. Indoor draws like the Churaumi Aquarium and the summer Eisa festivals are the exceptions."
           }
         },
         "plan": null,
@@ -1766,6 +1808,65 @@
               12
             ],
             "why": "Winter: LA's rainy season - mild by any global standard and still mostly sunny, but the few real storms of the year cluster here - and the coolest, shortest days (highs ~19C, cool evenings). Everything stays open; gray-whale watching runs Dec-April and you can ski Big Bear and surf the same day. Quieter and cheaper outside the holidays."
+          }
+        },
+        "plan": null,
+        "visits": []
+      }
+    ]
+  },
+  {
+    "id": "raja-ampat",
+    "name": "Raja Ampat",
+    "region": "Southwest Papua, Indonesia",
+    "tier": {
+      "min": "long",
+      "max": "long"
+    },
+    "location": {
+      "lat": -0.55,
+      "lng": 130.65,
+      "precision": "approximate"
+    },
+    "description": "The Coral Triangle's epicentre off Indonesia's Bird's Head Peninsula - the richest reef biodiversity on Earth, plus manta cleaning stations, mushroom-shaped karst islets and the lagoon viewpoints of Piaynemo and Wayag.",
+    "travel": "No quick route from Bangkok: fly via Jakarta or Makassar to Sorong (SOQ), ~2 travel days each way, then a ferry or charter boat to Waisai on Waigeo or straight to a dive resort or liveaboard.",
+    "emoji": "🪸",
+    "experiences": [
+      {
+        "id": "dive",
+        "title": "Diving & snorkeling",
+        "tags": [
+          "scuba-diving",
+          "snorkeling",
+          "beach"
+        ],
+        "seasons": {
+          "peak": {
+            "months": [
+              1,
+              2,
+              3,
+              11,
+              12
+            ],
+            "why": "Core dry season (northwest monsoon): calmest seas, visibility often 25-30m+, and the highest marine-life density of the year - schooling fish, reef sharks, and the Dec-March reef and oceanic manta aggregations at the Dampier Strait cleaning stations (Manta Sandy) and around Misool."
+          },
+          "mid": {
+            "months": [
+              4,
+              10
+            ],
+            "why": "Edges of the good season: October as the southeast monsoon finishes clearing out and April as it begins to return - still largely calm with good visibility, and quieter than the Nov-March peak."
+          },
+          "low": {
+            "months": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "why": "Southeast monsoon: the wettest and windiest months (June-July heaviest, August rain on roughly half of days), with rougher open-water crossings, visibility down to 10-15m from runoff and plankton, and the reef mantas largely gone from the northern cleaning stations. Most liveaboards suspend operations in July-August and Misool's resorts close, but land-based diving in the sheltered Dampier Strait runs year-round at reduced quality and lower prices; September is the transition as conditions ease."
           }
         },
         "plan": null,
